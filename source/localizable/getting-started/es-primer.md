@@ -36,8 +36,18 @@ a.greeting = "good night";
 
 Arrow functions are not a short-hand.
 
+```
+let obj = Ember.Object.create({
+    firstName: "Robert",
+    lastName: "Jackson",
+    
+    getName: () => {
+    }
+});
+```
 
-## Short-hand method literal
+
+## Method literal short-hand
 
 ```javascript
 export default Ember.Route.extend({
@@ -53,6 +63,30 @@ export default Ember.Route.extend({
     return [];
   }
 });
+```
+
+## Object literal short-hand
+
+```javascript
+let firstName = "Robert";
+let lastName = "Jackson";
+
+let person = {
+  firstName: firstName,
+  lastName: lastName
+};
+// => { firstName: 'Robert', lastName: 'Jackson' }
+```
+
+```javascript
+let firstName = "Robert";
+let lastName = "Jackson";
+
+let person = {
+  firstName,
+  lastName
+};
+// => { firstName: 'Robert', lastName: 'Jackson' }
 ```
 
 ## Destructuring
