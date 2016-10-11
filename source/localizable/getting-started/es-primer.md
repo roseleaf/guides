@@ -95,7 +95,7 @@ let lastName = "Jackson";
 console.log(`My name is ${firstName} ${lastName}.");
 ```
 
-Useful in CPs. Example:
+Useful in computed properties. Example:
 
 ```javascript
 export default Ember.Object.extend({
