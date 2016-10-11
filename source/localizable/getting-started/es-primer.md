@@ -36,7 +36,7 @@ a.greeting = "good night";
 
 Arrow functions are not a short-hand.
 
-```
+```javascript
 let obj = Ember.Object.create({
     firstName: "Robert",
     lastName: "Jackson",
