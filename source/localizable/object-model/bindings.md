@@ -15,8 +15,8 @@ Husband = Ember.Object.extend({
   householdIncome: Ember.computed.alias('wife.householdIncome')
 });
 
-husband = Husband.create({
-  wife: wife
+wife = Husband.create({
+  husband: husband
 });
 
 husband.get('householdIncome'); // 80000
